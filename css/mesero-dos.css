@@ -1,0 +1,114 @@
+:root {
+    --color1: #11397C;
+    --color2: #E2AB2D;
+    --color3: #FFFFFF;
+    --color4: #7E7E7E;
+    --color5: #B3F7BF;
+    --color6: #FE8F7E;
+}
+.but-mesero{
+    background-color:  var(--color3);
+    color: var(--color2);
+    padding: 0.3rem 2.5rem;
+    border-radius: 3px;
+}
+.header{
+    background-color: var(--color1);
+    padding: 1rem;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+}
+.productos{
+    display: flex;
+    justify-content: space-between;
+}
+.productos h3{
+    margin-top: 2rem;
+    color: var(--color2);
+}
+.productos img{
+    width: 45px;
+    height: 45px;
+    margin-top: 2rem;
+}
+.fila{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.fila a{
+    background-color: var(--color2);
+    color: var(--color3);
+    text-decoration: none;
+    padding: 0rem 1rem;
+    border-radius: 5px;
+}
+.fila p{
+    color: var(--color2);
+}
+.fila{
+    display: flex;
+    gap: 1rem;
+}
+.card{
+    padding:1rem 1rem 0rem 1rem;
+    border: 2px solid var(--color4);
+}
+.card-body h5{
+    font-weight: bold;
+}
+
+.cartas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 2rem;
+}
+button .btn{
+    border: 1px solid var(--color2);
+}
+
+.productos button i span{
+    color: var(--color3);
+    border: 1px solid var(--color2);
+    background-color: var(--color2);
+    border-radius: 5px;
+}
+
+.cantidad-btn{
+    background-color: var(--color1);
+    color: var(--color3);
+    border-radius: 5px;
+    border: noe;
+}
+.confirmar button{
+    background-color: var(--color1);
+    color: var(--color3);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+}
+.confirmar{
+    display: flex;
+    justify-content: right;
+}
+
+@media (max-width: 768px) {
+    .cartas {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+
+    }
+
+    .productos {
+        width: 100%;
+        padding: 10px;
+    }
+
+    
+}

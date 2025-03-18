@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/mesero-dos.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="img/loguito.png" alt="Logo">
+
+            <nav class="dropdown">
+                <button class="but-mesero d-flex  align-items-center btn btn-secondary dropdown-toggle" href="#"
+                    role="button" data-bs-toggle="dropdown">
+                    <p class="texto-dropdown mb-0">Mesero</p>
+                </button>
+
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="mesero-uno.html">Mesero</a></li>
+                    <li><a class="dropdown-item" href="cajero.html">Cajero</a></li>
+                    <li><a class="dropdown-item" href="admin.html">Administrador</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="container productos ">
+        <h3>Productos</h3>
+        <div class="dropdown">
+            <button class="mt-4 btn menu-button" type="button" data-bs-toggle="dropdown">
+                <i class="bi bi-list"><span class="material-symbols-outlined">
+                        menu
+                    </span></i>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Pollos a la brasa</a></li>
+                <li><a class="dropdown-item" href="#">Parrillas y brochetas</a></li>
+                <li><a class="dropdown-item" href="#">Salsas y Aderezos</a></li>
+                <li><a class="dropdown-item" href="#">Entradas y Piqueos</a></li>
+                <li><a class="dropdown-item" href="#">Menús Infantiles</a></li>
+                <li><a class="dropdown-item" href="#">Bebidas y Refrescos</a></li>
+                <li><a class="dropdown-item" href="#">Postres</a></li>
+                <li><a class="dropdown-item" href="#">Promociones y Combos</a></li>
+                <li><a class="dropdown-item" href="#">Pollo Frito y Crujiente</a></li>
+                <li><a class="dropdown-item" href="#">Ensaladas Especiales</a></li>
+                <li><a class="dropdown-item" href="#">Cremas y Sopas</a></li>
+            </ul>
+        </div>
+
+    </main>
+
+    <section class="container">
+        <section class="cartas">
+            <article class="card" style="width: 15rem;">
+                <img src="img/pollo.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div>
+                        <h5 class="card-title">Brasa Dorada</h5>
+                        <p class="card-text">Pollo a la brasa marinado + papas nativas + ensalada + cremas</p>
+                    </div>
+                    <div class="fila">
+                        <a href="#" class="btn btn-warning" onclick="agregarProducto('Brasa Dorada', 'Pollo a la brasa marinado + papas nativas + ensalada + cremas', '68.00')">Agregar</a>
+                        <p>s/. 68.00</p>
+                    </div>
+                </div>
+            </article>
+            <article class="card" style="width: 15rem;">
+                <img src="img/maracuya.jpg" class="card-img-top" height="165rem" alt="...">
+                <div class="card-body">
+                    <div>
+                        <h5 class="card-title">Vaso de maracuyá</h5>
+                        <p class="card-text">Exótica y refrescante, equilibrio perfecto entre dulzura y acidez. </p>
+                    </div>
+                    <div class="fila">
+                        <a href="#" class="btn btn-warning" onclick="agregarProducto('Vaso de maracuyá', 'Exótica y refrescante, equilibrio perfecto entre dulzura y acidez. ', '8.00')">Agregar</a>
+                        <p>s/. 8.00</p>
+                    </div>
+                </div>
+            </article>
+            <article class="card" style="width: 15rem;">
+                <img src="img/pollo.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div>
+                        <h5 class="card-title">Brasa Dorada</h5>
+                        <p class="card-text">Pollo a la brasa marinado + papas nativas + ensalada</p>
+                    </div>
+                    <div class="fila">
+                        <a href="#" class="">Agregar</a>
+                        <p>s/. 68.00</p>
+                    </div>
+                </div>
+            </article>
+            <article class="card" style="width: 15rem;">
+                <img src="img/pollo.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div>
+                        <h5 class="card-title">Brasa Dorada</h5>
+                        <p class="card-text">Pollo a la brasa marinado + papas nativas + ensalada</p>
+                    </div>
+                    <div class="fila">
+                        <a href="#" class="">Agregar</a>
+                        <p>s/. 68.00</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="cartas">
+            <article class="card" style="width: 15rem;">
+                <img src="img/pollo.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div>
+                        <h5 class="card-title">Brasa Dorada</h5>
+                        <p class="card-text">Pollo a la brasa marinado + papas nativas + ensalada</p>
+                    </div>
+                    <div class="fila">
+                        <a href="#" class="">Agregar</a>
+                        <p>s/. 68.00</p>
+                    </div>
+                </div>
+            </article>
+            <article class="card" style="width: 15rem;">
+                <img src="img/pollo.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div>
+                        <h5 class="card-title">Brasa Dorada</h5>
+                        <p class="card-text">Pollo a la brasa marinado + papas nativas + ensalada</p>
+                    </div>
+                    <div class="fila">
+                        <a href="#" class="">Agregar</a>
+                        <p>s/. 68.00</p>
+                    </div>
+                </div>
+            </article>
+            <article class="card" style="width: 15rem;">
+                <img src="img/pollo.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div>
+                        <h5 class="card-title">Brasa Dorada</h5>
+                        <p class="card-text">Pollo a la brasa marinado + papas nativas + ensalada</p>
+                    </div>
+                    <div class="fila">
+                        <a href="#" class="">Agregar</a>
+                        <p>s/. 68.00</p>
+                    </div>
+                </div>
+            </article>
+            <article class="card" style="width: 15rem;">
+                <img src="img/pollo.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div>
+                        <h5 class="card-title">Brasa Dorada</h5>
+                        <p class="card-text">Pollo a la brasa marinado + papas nativas + ensalada</p>
+                    </div>
+                    <div class="fila">
+                        <a href="#" class="">Agregar</a>
+                        <p>s/. 68.00</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+    </section>
+
+
+    <section class="container productos mt-5 d-flex flex-column">
+        <h3>Pedidos</h3>
+        <div id="lista-productos" class="mt-4"></div>
+
+    </section>
+    <section class="container confirmar mt-4">
+        <button>Confirmar pedido</button>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+
+
+
+
+
+
+
+
+
+
+<script>
+    function agregarProducto(nombre, descripcion, precio) {
+    // Obtiene el contenedor donde se mostrarán los productos
+    let lista = document.getElementById("lista-productos");
+
+    // Crea un nuevo elemento 'div' para el producto
+    let nuevoProducto = document.createElement("div");
+
+    // Agrega clases al nuevo producto para su estilo y alineación
+    nuevoProducto.classList.add("producto-seleccionado", "d-flex", "align-items-center", "justify-content-between");
+
+    // Define el contenido HTML del nuevo producto con los datos recibidos
+    nuevoProducto.innerHTML = `
+        <div style="background-color: #EFF5FF; padding:1rem; display:flex; gap: 40rem; width:100%; border-radius: 10px; margin-top:1rem">
+            <div>
+                <strong>${nombre}</strong> <!-- Muestra el nombre del producto -->
+                <p class="mb-0 text-muted">${descripcion}</p> <!-- Muestra la descripción -->
+            </div>
+            <div class="d-flex align-items-center">
+                <span class="fw-bold me-3">s/. ${precio}</span> <!-- Muestra el precio del producto -->
+                <!-- Botón para disminuir la cantidad -->
+                <button class="cantidad-btn" onclick="cambiarCantidad(this, -1)">-</button>
+                <span class="mx-2">1</span> <!-- Cantidad inicial del producto -->
+                <!-- Botón para aumentar la cantidad -->
+                <button class="cantidad-btn" onclick="cambiarCantidad(this, 1)">+</button>
+            </div>
+        </div>
+    `;
+
+    // Agrega el nuevo producto a la lista de productos en la interfaz
+    lista.appendChild(nuevoProducto);
+    }
+
+
+
+
+    
+    function cambiarCantidad(btn, valor) {
+    // Encuentra el elemento <span> que muestra la cantidad actual
+    let cantidadElemento = btn.parentElement.querySelector("span.mx-2");
+
+    // Convierte el contenido del <span> a un número y le suma/resta el valor
+    let cantidad = parseInt(cantidadElemento.innerText) + valor;
+
+    // Asegura que la cantidad no sea menor a 1
+    if (cantidad < 1) cantidad = 1;
+
+    // Actualiza el contenido del <span> con la nueva cantidad
+    cantidadElemento.innerText = cantidad;
+}
+</script>
+
+
+
+
+
+
+    
+
+</body>
+
+</html>

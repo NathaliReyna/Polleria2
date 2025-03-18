@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+    --color1: #11397C;
+    --color2: #E2AB2D;
+    --color3: #FFFFFF;
+    --color4: #7E7E7E;
+    --color5: #FFF7E4;
+}
+
+
+
+.sidebar {
+    background-color: #0d2956;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    width: 250px;
+}
+.sidebar button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.content {
+    margin-left: 260px;
+    padding: 20px;
+}
+.title {
+    color: #d1d1d1;
+    font-size: 24px;
+    font-weight: bold;
+}
+.mesa {
+    width: 13rem;
+    height: 13rem;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.mesa-libre {
+    background-color: #a0e7a0;
+    color: var(--color3);
+}
+.mesa-ocupada {
+    background-color: #FE8F7E;
+    color: var(--color3);
+}
+
+
+
+.sidebar {
+    background-color: #0d2956;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    width: 250px;
+}
+
+.sidebar{
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 6rem;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: var(--color3);
+}
+.sidebar button a:hover{
+    color: var(--color1);
+}
+
+/*Boton selector*/
+.but-mesero{
+    background-color:  var(--color3);
+    color: var(--color2);
+    padding: 0.3rem 2.5rem;
+    border-radius: 3px;
+    border: 2px solid var(--color2);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) { 
+    
+
+    .content {
+        margin-left: 100px;
+        width: calc(100% - 100px);
+    }
+
+    .mesa {
+        padding: 10px;
+    }
+    .container .row .mesa{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: fixed;
+        left: -260px;
+        top: 0;
+        height: 100vh;
+        z-index: 1000;
+        padding-top: 20px;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    #toggleSidebar {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 1100;
+    }
+
+    .content {
+        margin-left: 0;
+        width: 100%;
+    }
+    .title{
+        display: none;
+    }
+    .dropdown{
+        display: flex;
+        margin-left: 15rem;
+    }
+}
+
+@media (max-width: 576px) { 
+    .content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .mesa {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .row .col-3 {
+        flex: 0 0 50%; /* Hace que las mesas se distribuyan en 2 columnas */
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 400px) {
+    .row .col-3 {
+        flex: 0 0 100%; /* Hace que cada mesa ocupe toda la fila */
+        max-width: 100%;
+    }
+}

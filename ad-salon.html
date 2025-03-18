@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Disponibilidad de Mesas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/ad-salon.css">
+    
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar text-white p-3 align-items-center" style="width: 260px; ">
+        <img src="img/loguito.png" alt="" width="140rem" class="mt-3">
+        <button class="btn btn-outline-light w-100 mb-2"><a href="admin.html">Dashboard</a></button>
+        <button class="btn btn-outline-light w-100 mb-2"><a href="ad-inventario.html">Inventario</a></button>
+        <button class="btn btn-outline-light w-100 mb-2"><a href="ad-salon.html">Salón</a></button>
+        <button class="btn btn-outline-light w-100 mb-2"><a href="ad-llevar.html">Llevar</a></button>
+        <button class="btn btn-outline-light w-100"><a href="ad-delivery.html">Delivery</a></button>
+    </aside>
+
+    <!-- Contenido Principal -->
+    <main class="content">
+        <header class="d-flex justify-content-between mb-5">
+            <button id="toggleSidebar" class="btn btn-light d-md-none">☰</button>
+            <h2 class="title fw-bold text-secondary">Disponibilidad mesas salón</h2>
+            <div class="dropdown">
+                <button class="but-mesero d-flex  align-items-center btn btn-secondary dropdown-toggle" href="#"
+                    role="button" data-bs-toggle="dropdown">
+                    <p class="texto-dropdown mb-0">Administrador</p>
+                </button>
+
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="mesero-uno.html">Mesero</a></li>
+                    <li><a class="dropdown-item" href="cajero.html">Cajero</a></li>
+                    <li><a class="dropdown-item" href="admin.html">Administrador</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- Grid de Mesas -->
+        <section class="container mt-4">
+            <div class="row g-3">
+                <article class="col-3">
+                    <div class="mesa mesa-ocupada">Mesa 01 <br> s/. 120</div>
+                </article>
+                <article class="col-3">
+                    <div class="mesa mesa-ocupada">Mesa 02 <br> s/. 60</div>
+                </article>
+                <article class="col-3">
+                    <div class="mesa mesa-libre">Mesa 03</div>
+                </article>
+                <article class="col-3">
+                    <div class="mesa mesa-libre">Mesa 04</div>
+                </article>
+                <article class="col-3">
+                    <div class="mesa mesa-libre">Mesa 05</div>
+                </article>
+                <article class="col-3">
+                    <div class="mesa mesa-libre">Mesa 06</div>
+                </article>
+                <article class="col-3">
+                    <div class="mesa mesa-ocupada">Mesa 07 <br> s/. 190</div>
+                </article>
+                <article class="col-3">
+                    <div class="mesa mesa-libre">Mesa 08</div>
+                </article>
+                <article class="col-3">
+                    <div class="mesa mesa-libre">Mesa 09</div>
+                </article>
+                <article class="col-3">
+                    <div class="mesa mesa-ocupada">Mesa 10 <br> s/. 340</div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+    <script>
+        // Sidebar toggle
+        document.getElementById("toggleSidebar").addEventListener("click", function () {
+            document.querySelector(".sidebar").classList.toggle("active");
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

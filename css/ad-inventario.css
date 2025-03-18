@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+    --color1: #11397C;
+    --color2: #E2AB2D;
+    --color3: #FFFFFF;
+    --color4: #7E7E7E;
+    --color5: #FFF7E4;
+}
+.sidebar{
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 6rem;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: var(--color3);
+}
+.sidebar button a:hover{
+    color: var(--color1);
+}
+
+
+
+body {
+    background-color: #f8f9fa;
+}
+
+.sidebar {
+    background-color: #0d2956;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    width: 250px;
+}
+
+.sidebar button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.content {
+    margin-left: 260px;
+    padding: 20px;
+}
+
+.table th {
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+}
+
+.table td {
+    text-align: center;
+}
+
+.title {
+    color: #d1d1d1;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+
+.sidebar{
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 6rem;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: var(--color3);
+}
+.sidebar button a:hover{
+    color: var(--color1);
+}
+
+/*Boton selector*/
+.but-mesero{
+    background-color:  var(--color3);
+    color: var(--color2);
+    padding: 0.3rem 2.5rem;
+    border-radius: 3px;
+    border: 2px solid var(--color2);
+}
+
+#toggleSidebar {
+    display: none;
+}
+/* Tabla responsiva */
+.table-responsive {
+    overflow-x: auto;
+}
+
+@media (max-width: 991px) {
+    .sidebar {
+        width: 220px;
+    }
+
+    .content {
+        margin-left: 220px;
+        width: calc(100% - 220px);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: fixed;
+        left: -260px;
+        top: 0;
+        height: 100vh;
+        z-index: 1000;
+        padding-top: 20px;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    #toggleSidebar {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 1100;
+    }
+
+    .content {
+        margin-left: 0;
+        width: 100%;
+    }
+    .title{
+        display: none;
+    }
+    .dropdown{
+        display: flex;
+        margin-left: 15rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .table-responsive {
+        font-size: 14px;
+    }
+}

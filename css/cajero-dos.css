@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+    --color1: #11397C;
+    --color2: #E2AB2D;
+    --color3: #FFFFFF;
+    --color4: #7E7E7E;
+    --color5: #FFF7E4;
+}
+.header{
+    background-color: var(--color1);
+    padding: 1rem;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+}
+.card-header{
+    color: var(--color2);
+}
+
+
+

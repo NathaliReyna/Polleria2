@@ -1,0 +1,141 @@
+:root {
+    --color1: #11397C;
+    --color2: #E2AB2D;
+    --color3: #FFFFFF;
+    --color4: #7E7E7E;
+    --color5: #B3F7BF;
+    --color6: #FE8F7E;
+}
+
+.header{
+    background-color: var(--color1);
+    padding: 1rem;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+}
+.but-mesero{
+    background-color:  var(--color3);
+    color: var(--color2);
+    padding: 0.3rem 2.5rem;
+    border-radius: 3px;
+}
+.opciones{
+    display: flex;
+    gap: 1rem;
+    padding: 3rem 0rem;
+
+}
+.but-salon{
+    background-color:  var(--color1);
+    color: var(--color3);
+    padding: 0.3rem 2.5rem;
+    border-radius: 3px;
+}
+.but-llevar{
+    background-color: var(--color3);
+    color: var(--color2);
+    border: 1px solid var(--color2);;
+    padding: 0.3rem 2.5rem;
+    border-radius: 3px;
+}
+.but-delivery{
+    background-color: var(--color3);
+    color: var(--color4);
+    border: 1px solid var(--color4);
+    padding: 0.3rem 2.5rem;
+    border-radius: 3px;
+}
+
+.mesas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6.5rem;
+    justify-content: center;
+}
+
+.mesa-2{
+    margin-top: 2rem;
+}
+.mesa-verde{
+    width: 11rem;
+    height: 11rem;
+    padding: 1rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color5);
+    color: var(--color3);
+    border-radius: 5px;
+}
+.mesa-rojo{
+    width: 11rem;
+    height: 11rem;
+    padding: 1rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color6);
+    color: var(--color3);
+    border-radius: 5px;
+}
+
+
+.dropdown-custom {
+    background-color: white;
+    border-radius: 12px;
+    border: 2px solid #1d428a; /* Azul oscuro */
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.dropdown-custom .icono-usuario {
+    color: #d9a227; /* Dorado */
+}
+
+.dropdown-custom .texto-dropdown {
+    color: #d9a227; /* Dorado */
+    font-weight: bold;
+    margin: 0;
+}
+
+.dropdown-menu {
+    border-radius: 10px;
+}
+
+.dropdown-item:hover {
+    background-color: #d9a227;
+    color: white;
+}
+
+.but-mesero{
+    background-color:  var(--color3);
+    color: var(--color2);
+    padding: 0.3rem 2.5rem;
+    border-radius: 3px;
+}
+.mesa-uno a{
+    text-decoration: none;
+    color: var(--color3)
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    
+    
+    .but-salon, .but-llevar, .but-delivery {
+        text-align: center;
+        margin: 5px 0;
+    }
+}

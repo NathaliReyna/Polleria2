@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --color1: #11397C;
+    --color2: #E2AB2D;
+    --color3: #FFFFFF;
+    --color4: #7E7E7E;
+    --color5: #FFF7E4;
+}
+
+.sidebar {
+    position: fixed;
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 6rem;
+    width: 260px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: var(--color3);
+}
+
+.sidebar button a:hover {
+    color: var(--color1);
+}
+
+.sidebar {
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    width: 250px;
+}
+
+.sidebar button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.contenido {
+    margin-left: 260px;
+    padding: 20px;
+}
+
+
+
+/* Estilos para select */
+.estado-select {
+    background-color: rgb(209, 232, 251);
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid black;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+}
+.estado-select:focus {
+    outline: 2px solid blue;
+}
+/* Estilos para las opciones */
+.estado-select option {
+    font-weight: bold;
+}
+
+/*Boton selector*/
+.but-mesero{
+    background-color:  var(--color3);
+    color: var(--color2);
+    padding: 0.3rem 2.5rem;
+    border-radius: 3px;
+    border: 2px solid var(--color2);
+}
+
+
+@media (max-width: 768px) {
+    /* Ocultar sidebar en móviles */
+    
+
+
+    /* Ajustar contenido */
+    .contenido {
+        margin-left: 0;
+    }
+
+    /* Botón para abrir/cerrar sidebar */
+
+
+    /* Tabla responsiva */
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    .table {
+        font-size: 14px;
+    }
+
+    /* Botón eliminar en móviles más pequeño */
+    .delete-btn {
+        padding: 5px;
+    }
+
+    .estado-select {
+        font-size: 12px;
+        padding: 3px;
+    }
+}
+
+@media (max-width: 480px) {
+    .table {
+        font-size: 12px;
+    }
+
+    /* Reducir tamaño de textos en botones */
+    .btn {
+        font-size: 12px;
+    }
+
+    /* Ajustar encabezados de tabla */
+    .table thead th {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+}
+@media (max-width: 768px) {
+    .sidebar {
+        position: fixed;
+        left: -260px;
+        top: 0;
+        height: 100vh;
+        z-index: 1000;
+        padding-top: 20px;
+        align-items: center;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    #toggleSidebar {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 1100;
+    }
+
+    .content {
+        margin-left: 0;
+        width: 100%;
+    }
+    .title{
+        display: none;
+    }
+    .dropdown{
+        display: flex;
+        margin-left: 17rem;
+    }
+
+}
+
